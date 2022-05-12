@@ -1,0 +1,241 @@
+body {
+    font-family: "Oswald", sans-serif;
+    background-color: black;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+.nav-main {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 5px 0px 5px;
+}
+.nav-main a{
+    text-decoration: none;
+    color:white;
+}
+
+.nav-main ul{
+    list-style-type: none;
+}
+
+.nav-brand {
+    width: 50px;
+}
+
+
+.nav-main ul {
+    display: flex;
+    padding:0px;
+    margin-top:10px;
+}
+
+.nav-main ul li {
+    padding: 10px;
+}
+
+.nav-main ul li a {
+    padding: 2px;
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+hr {
+    margin: 10px 0;
+    color:white;
+}
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+    color:white;
+}
+
+.big {
+    width: 100%;
+    height: 550px;
+    background: url("./img/showcase2.jpg") no-repeat center center/cover;
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    color:white;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    height:550px;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    align-self: center;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.cards{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.card{
+    background-color: transparent;
+    color:white;
+}
+
+.card img{
+    height: 180px;
+}
+
+.learn-more{
+    font-weight: bold;
+}
+
+.banner{
+    height: 350px;
+    background: url("./img/tech-red.jpg");
+    color:white;
+}
+
+.banner-v2{
+    height: 350px;
+     background: url("./img/image-five.jpg") no-repeat center center/cover;
+     color:white;
+}
+
+.content{
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: #fff;
+}
+
+.social{
+    text-align: center;
+    color:white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.social ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.social ul li{
+    margin: 30px;
+}
+
+.social i {
+    font-size: 3rem;
+}
+
+footer{
+    background-color:grey;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+footer ul{
+    list-style-type: none;
+    margin-bottom:45px;
+    padding: 0;
+}
+
+footer li{
+    margin: 5px;
+}
+
+footer a{
+    text-decoration: none;
+    color:White;
+}
+
+.footer-close{
+    text-align: center;
+}
+
+
+@media (max-width:700px) {
+    .content {
+            width: 90%;
+            text-align: center;
+            padding: 60px 0 0 5px;
+            margin: 0 auto;
+        }
+
+   .menu-btn {
+       display: block;
+       margin-top:10px;
+   }
+
+   .menu-btn:hover {
+       opacity: 0.5;
+   }
+    
+   .nav-main  {
+       height:60px;
+   }
+
+  .nav-main ul.nav-menu {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #2f3640;
+      width: 50%;
+      height: 100%;
+      border-right: #ccc 1px solid;
+      opacity: 0.9;
+      padding: 30px;
+      transform: translateX(-500px);
+      transition: transform 0.5s ease-in-out;
+  }
+
+  .nav-main ul.nav-menu li {
+      padding: 20px;
+      border-bottom: #ccc solid 1px;
+      font-size: 14px;
+  }
+
+  .nav-main ul.nav-menu li:last-child {
+      border-bottom: 0;
+  }
+
+  .nav-main ul.nav-menu.show {
+      transform: translateX(-20px);
+  }
+
+  .nav-main ul.nav-menu-right {
+      display:none;
+  }
+
+  .nav-main img{
+      margin-left:10px;
+  }
+}
