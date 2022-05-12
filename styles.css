@@ -229,6 +229,7 @@ footer a{
 
   .nav-main ul.nav-menu.show {
       transform: translateX(-20px);
+      z-index: 1;
   }
 
   .nav-main ul.nav-menu-right {
